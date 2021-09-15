@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "src"
+version = "0.1.0"
+description = "Learn how to create a simple asynchronous PyQt GUI Application"
+authors = ["mochisue <motoki32925@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+tqdm = "^4.62.2"
+PyQt6 = "^6.1.1"
+progress = "^1.6"
+objgraph = "^3.5.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.8b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."console_scripts"]
+pyqtasync_gui = "src.sample:main"
